@@ -4,7 +4,7 @@ pipeline {
     environment {
         STAGING_SERVER = 'AWS EC2 Staging Server'
         PRODUCTION_SERVER = 'AWS EC2 Production Server'
-        RECIPIENT_EMAIL = '@iamdaiyankhan@gmail.com'
+        RECIPIENT_EMAIL = 'iamdaiyankhan@gmail.com'
     }
 
     stages {
