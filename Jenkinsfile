@@ -8,6 +8,10 @@ pipeline {
     }
 
     stages {
+        stage('Checkout') {
+            steps {
+                git credentialsId: 'github-token', url: 'https://github.com/Daiyan-Khan/snake_game.git'
+            }
         stage('Build') {
             steps {
                 echo 'Building the code using Maven...'
